@@ -1,11 +1,14 @@
 import React from "react";
+import IncCounter from "./components/IncCounter";
+import "./App.css"
 
 const App = () => {
+
   return (
     <>
-      <h1> Increment Counter </h1>
+      <IncCounter />
     </>
-  )
+  );
 };
 
 export default App;
