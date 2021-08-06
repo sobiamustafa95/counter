@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
+import { blue } from "@material-ui/core/colors";
+
 
 const Counter = () => {
 
@@ -16,8 +20,12 @@ const Counter = () => {
         <div>
             <h1> { count } </h1>
             <span>
-                <button onClick = { IncNum }> Increment </button>
-                <button onClick = { decNum }> Decrement </button> 
+                <button onClick = { IncNum }> 
+                    <AddIcon style = {{ background: blue[800] }} /> 
+                </button>
+                <button onClick = { decNum }> 
+                    <RemoveIcon style = {{ background: blue[800] }} /> 
+                </button> 
             </span>
         </div>
     );
