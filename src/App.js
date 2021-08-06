@@ -1,12 +1,12 @@
 import React from "react";
-import IncCounter from "./components/IncCounter";
+import Counter from "./components/Counter";
 import "./App.css"
 
 const App = () => {
 
   return (
     <>
-      <IncCounter />
+      <Counter />
     </>
   );
 };
